@@ -1,0 +1,173 @@
+/* General Styles */
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-color: #121212;
+  color: #ffffff;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #1f1f1f;
+  padding: 15px;
+  text-align: center;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+nav ul li a:hover {
+  color: #e67e22; /* Soft orange for hover effect */
+}
+
+.section {
+  padding: 60px 20px;
+  text-align: left; /* Ensure the text is left-aligned */
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Your Name Styling */
+h1 {
+  color: #ffffff;
+  font-size: 32px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+h2 {
+  color: #1abc9c; /* Teal for section headers */
+  margin-bottom: 17px;
+  text-align: center; /* Align section titles to the center */
+}
+
+p, li {
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+ul {
+  list-style-position: inside;
+  padding-left: 20px;
+}
+
+ul li {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+/* Profile Picture Styling */
+.profile-picture {
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  margin-bottom: 20px;
+  border: 2px #0000;
+  display: block;
+  margin-left: auto;
+  margin-right: auto; /* Center the profile picture */
+}
+
+/* Projects, Publications, and Conferences Styling */
+.project, .publication, .conference {
+  background-color: #1e1e1e;
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 800px;
+  border-radius: 8px;
+}
+
+.project h3, .publication h3, .conference h3 {
+  color: #1abc9c;
+  margin-bottom: 10px;
+}
+
+.project p, .publication p, .conference p {
+  font-size: 16px;
+  color: #d1d1d1;
+  line-height: 1.6;
+  margin-bottom: 10px;
+}
+
+a {
+  color: #1abc9c;
+}
+
+a:hover {
+  color: #e67e22;
+}
+
+/* Contact Section */
+form {
+  max-width: 600px;
+  margin: 20px auto;
+  text-align: left;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: none;
+  border-radius: 4px;
+}
+
+input[type="text"], input[type="email"] {
+  background-color: #1f1f1f;
+  color: #ffffff;
+}
+
+textarea {
+  height: 150px;
+  background-color: #1f1f1f;
+  color: #ffffff;
+}
+
+button {
+  background-color: #1abc9c;
+  color: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 18px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #16a085;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #1f1f1f;
+}
+
+/* GitHub Link Styling */
+.github-link {
+  color: #1abc9c;
+  font-size: 18px;
+  text-decoration: none;
+}
+
+.github-link:hover {
+  color: #e67e22;
+}
