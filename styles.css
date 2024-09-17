@@ -96,31 +96,32 @@ ul li {
 }
 
 .project h3, .publication h3, .conference h3 {
-  color: #5c8dad;
+  color: #5c8dad; /* Consistent color */
   margin-bottom: 10px;
 }
 
-/* Publication Details - Hidden by Default */
-.publication-details {
+/* Hide details for projects by default (same as publications) */
+.project-details, .publication-details {
   display: none;
   opacity: 0;
   transition: opacity 0.3s ease;
 }
 
-/* Show Details on Hover */
+/* Show details on hover for both projects and publications */
+.project:hover .project-details,
 .publication:hover .publication-details {
   display: block;
   opacity: 1;
 }
 
-/* Interactive Publication Title */
-.publication h3 {
+/* Interactive Project and Publication Title */
+.project h3, .publication h3 {
   cursor: pointer;
-  transition: color 0.3s ease;
+  /* Remove color change on hover */
 }
 
-.publication h3:hover {
-  color: #1abc9c;
+.project h3:hover, .publication h3:hover {
+  color: #5c8dad; /* Keep the same color on hover */
 }
 
 .project p, .publication p, .conference p {
@@ -180,11 +181,11 @@ ul li {
 
 /* Links Styling */
 a {
-  color: #5c8dad;
+  color: #5c8dad; /* Link color */
 }
 
 a:hover {
-  color: #1abc9c;
+  color: #5c8dad; /* Keep the same color on hover */
 }
 
 /* Contact Section */
@@ -213,8 +214,9 @@ textarea {
   color: #ffffff;
 }
 
+/* Update Button Styles */
 button {
-  background-color: #1abc9c;
+  background-color: #5c8dad; /* Same color as the links */
   color: #ffffff;
   border: none;
   padding: 10px 20px;
@@ -224,9 +226,10 @@ button {
 }
 
 button:hover {
-  background-color: #16a085;
+  background-color: #5c8dad; /* Keep the same color on hover */
 }
 
+/* Footer */
 footer {
   text-align: center;
   padding: 20px;
@@ -235,11 +238,11 @@ footer {
 
 /* GitHub Link Styling */
 .github-link {
-  color: #1abc9c;
+  color: #5c8dad; /* Same color as the other links */
   font-size: 18px;
   text-decoration: none;
 }
 
 .github-link:hover {
-  color: #e67e22;
+  color: #5c8dad; /* Keep the same color on hover */
 }
